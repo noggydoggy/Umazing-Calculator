@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Umazing Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Stats</h1>
+   <label>Speed: <input type="number" id="speed" value="50"></label><br>
+   <label>Stamina: <input type="number" id="stamina" value="50"></label><br>
+   <label>Power: <input type="number" id="power" value="50"></label><br>
+   <label>Guts: <input type="number" id="guts" value="50"></label><br>
+   <label>Wit: <input type="number" id="wit" value="50"></label><br>
+   
+   <h4>Strategy Modifier</h4>
+   <select name="Strategy Modifier" id="strategyMod">
+        <option value="0.02">Front Runner</option>
+        <option value="0.01">Pace Chaser</option>
+        <option value="0.01">Late Surger</option>
+        <option value="0.03">End Closer</option>
+   </select><br>
+
+   <h4>Course Distance</h4>
+   <select name="Course Distance" id="courseDistance">
+        <option value="1200">1200m</option>
+        <option value="2000">2000m</option>
+        <option value="2500">2500m</option>
+   </select><br><br>
+
+   <h3>Calculate</h3>
+   <button onclick="calculate()">Calculate Time</button>
+   
+   
+
+  <h2>Early Race</h2>
+  <p id="speedEarly"></p>
+  <p id="timeEarly"></p>
+  
+  <h2>Mid-Race</h2>
+  <p id="speedMid"></p>
+  <p id="timeMid"></p>
+
+  <h2>Late-Race</h2>
+  <p id="speedLate"></p>
+  <p id="timeLate"></p>
+
+  
+  <h2>Last Spurt</h2>
+  <p id="speedLast"></p>
+  <p id="timeLast"></p>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
